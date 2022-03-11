@@ -1,0 +1,123 @@
+label.error{
+    color: #e83e8c;
+}
+#seed_top_menu .navbar-nav a{
+    color: white;
+}
+#seed_top_menu .navbar-nav .dropdown-item{
+    color: #212529;
+}
+#seed_top_menu .dropdown-menu{
+    top : 112%;
+}
+#seed_top_menu.navbar{
+    /* background-color: #fff; */
+    /* border-bottom: 1px solid #c8ced3; */
+    background: linear-gradient(120deg, #00e4d0, #5983e8);
+}
+.seed-sidebar{
+    /* background-image: url(../images/menuside.jpg); */
+    /* background-position: center; */
+    background: white;
+}
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: calc(100vh - 56px);
+    transition: all 0.3s;
+}
+#seed-container{
+    background: #f2f8f9;
+}
+.sidebar ul li a {
+    display: block;
+    /* padding: .75rem 1rem; */
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: .9rem;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 20px;
+}
+.sidebar .btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    height: auto;
+}
+.sidebar .inside-used{
+    padding-left: 2.5rem;
+    background: #fafbfc;
+}
+.sidebar .btn-outline-dark {
+    color: #343a40;
+    background-color: transparent;
+    background-image: none;
+    border-color: #343a40;
+}
+.sidebar ul li a:hover, .sidebar ul .active a {
+    /* color: #00e4d0; */
+    background: #fafbfc;
+}
+.sidebar ul ul a {
+    padding-left: 2.5rem;
+    background: #fafbfc;
+}
+.sidebar [data-toggle="collapse"] {
+    position: relative;
+}
+.sidebar [data-toggle="collapse"]:before {
+    content: "\f0d7";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    position: absolute;
+    right: 1rem;
+}
+.sidebar [aria-expanded="true"] {
+    background: #fafbfc;
+}
+.sidebar [aria-expanded="true"]:before {
+    content: "\f0d8";
+}
+.sidebar.toggled {
+    margin-left: -250px;
+}
+.list-unstyled .active{
+    color : lightseagreen;
+    background: #fafbfc;
+}
+.content {
+    width: 100%;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.sidebar-toggle{
+    display : none;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        margin-left: -250px;
+    }
+    .sidebar.toggled {
+        margin-left: 0;
+    }
+    .sidebar-toggle{
+        display : block;
+    }
+}

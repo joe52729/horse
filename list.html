@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets_panel/plugins/bootstrap4/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets_panel/plugins/font-awesome/css/font-awesome.min.css">    <!-- 側邊選單css -->
+    <link rel="stylesheet" href="./assets_panel/seed/css/menu_seed.css">
+    <!-- framework css -->
+    <link rel="stylesheet" href="./assets_panel/seed/css/style_seed.css">
+    <!-- framework 因應簡單農修正的 css -->
+    <link rel="stylesheet" href="./assets_panel/seed/css/component_seed.css">
+
+
+    <script src="./assets_panel/plugins/jquery/jquery.min.js"></script>
+    <!-- 表格外掛 -->
+    <link rel="stylesheet" type="text/css" href="./assets_panel/js/datatables/jquery.dataTables.css"/>
+    <script type="text/javascript" src="./assets_panel/js/datatables/jquery.dataTables.min.js"></script>
+    <!-- bootstrap4用 -->
+    <script src="./assets_panel/plugins/bootstrap4/popper.min.js"></script>
+    <script src="./assets_panel/plugins/bootstrap4/bootstrap.min.js"></script>
+    <!-- 時間外掛 -->
+    <script src="./assets_panel/plugins/momentjs/moment.js"></script>
+    <script src="./assets_panel/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="./assets_panel/js/common_seed.js"></script>
+
+    <!-- 下拉外掛 -->
+    <link rel="stylesheet" href="./assets_panel/plugins/bootstrap-select/css/bootstrap-select.min.css">
+    <script src="./assets_panel/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+ 
+ 
+ 
+</head>
+<body>
+    <!-- uat evn check -->
+    <div class="text-mark-just-for-uat">『Notice 注意』 DEV Process Now / 開發環境運行中</div>
+    <div class="text-mark-just-for-uat-top"></div>
+    <div class="text-mark-just-for-uat-left"></div>
+    <div class="text-mark-just-for-uat-right"></div>
+    <div class="text-mark-just-for-uat-bottom"></div>
+                    
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="lds-hourglass"></div>
+            </div>
+            <p class="text-center">Please wait...</p>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand" id="seed_top_menu">
+        <a class="sidebar-toggle text-light mr-3"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a class="navbar-brand" href="./pane1">
+          <img src="./assets_panel/images/logo-black.png" style="max-width:50px" alt="">
+          
+        </a>
+    </nav>
+    <div class="d-flex">
+        <nav class="sidebar seed-sidebar">
+            <ul class="list-unstyled">
+                <li class="user-info pt-2 pb-2">
+                    <a href="./pane1/expert_report" class="">
+                        <img class="mr-1" src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg" width="32" height="32" alt="User" />
+                        Effy Chou      
+                    </a>
+                </li>
+                <li>
+                    <a href="./pane1" class="active">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="menu-title">首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pane1/expert_report" class="">
+                        <i class="fa fa-medkit" aria-hidden="true"></i>
+                        <span class="menu-title">专家咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#left_setting_ul" data-toggle="collapse">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        设定
+                    </a>
+                    <ul  id="left_setting_ul" class="list-unstyled collapse">
+                        <li>
+                            <div class="inside-used">
+                                <a class="btn btn-sm btn-outline-dark" href="./pane1?lang=zh-tw" role="button">繁</a>
+                                <a class="btn btn-sm btn-outline-dark" href="./pane1?lang=zh-cn" role="button">简</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./pane1/logout">
+                                <span>登出            </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-panel" id="seed-container">
+            <div class="content-wrapper">
+                <h3 class="mb-4">农场清单</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">參考外掛</h4>
+                        <ol>
+                            <li>icon外掛 Fontawesome
+                                <br><a href="https://fontawesome.com/v4.7.0/">Font Awesome 4.7.0</a>
+                            </li>
+                            <li><a href="https://datatables.net/">表格外掛</a></li>
+                            <li><a href="https://momentjs.com/">時間外掛 moment.js</a></li>
+                            <li><a href="https://developer.snapappointments.com/bootstrap-select/">下拉選單外掛（可攻下拉搜尋)</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="text-right text-gray pt-2 pb-2 pr-1">
+                    <small>智慧科技 让农业简单好管理</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

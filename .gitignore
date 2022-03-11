@@ -1,0 +1,11 @@
+application/views/pics/*.jpeg
+
+application/views/pics/*.png
+
+application/views/pics/*.jpg
+
+application/views/pics/*.gif
+
+application/controllers/product/xxx.txt
+
+application/models/common/function.php

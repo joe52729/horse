@@ -1,0 +1,93 @@
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+// Components
+// @import "bootstrap/component-animations";
+// @import "bootstrap/dropdowns";
+// @import "bootstrap/button-groups";
+// @import "bootstrap/input-groups";
+// @import "bootstrap/navs";
+// @import "bootstrap/navbar";
+// @import "bootstrap/breadcrumbs";
+// @import "bootstrap/pagination";
+// @import "bootstrap/pager";
+// @import "bootstrap/labels";
+// @import "bootstrap/badges";
+// @import "bootstrap/jumbotron";
+// @import "bootstrap/thumbnails";
+// @import "bootstrap/alerts";
+// @import "bootstrap/progress-bars";
+// @import "bootstrap/media";
+// @import "bootstrap/list-group";
+// @import "bootstrap/panels";
+// @import "bootstrap/responsive-embed";
+// @import "bootstrap/wells";
+// @import "bootstrap/close";
+
+// Components w/ JavaScript
+// @import "bootstrap/modals";
+// @import "bootstrap/tooltip";
+// @import "bootstrap/popovers";
+// @import "bootstrap/carousel";
+
+// Utility classes
+// @import "bootstrap/utilities";
+// @import "bootstrap/responsive-utilities";
+.dpn{
+    display: none;
+}
+.login-page-fix , .login-card-fix{
+    background-color: transparent;
+    box-shadow: none;
+}
+.login-page-fix{
+    position: relative;
+}
+.login-card-fix{
+    position: absolute;
+    height: 230px;
+    width: 400px;
+    top:45%;
+    left: 50%;
+    margin-top: -115px; 
+    margin-left: -200px;
+}
+.card .header{
+    border-bottom: 0px solid transparent;
+    padding: 0;
+}
+html { 
+    background: url(../images/ba.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    background-color: transparent;
+}
+.mar0{
+    margin: 0 auto;
+}
+@media( max-width : 480px ){
+    .login-card-fix{
+        width: 300px;
+        margin-left: -150px;
+    }
+}
